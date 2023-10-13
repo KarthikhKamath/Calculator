@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">Calculator</div>
+    <div class="calcpart"></div>
+    <form class="form" name="form">
+        <input class="text" type="text" name="text" readonly>
+        <button class="clear" type="button" onclick="return document.form.text.value = ''">AC</button>
+        <button type="button" onclick="return document.form.text.value +='/'">÷</button>
+        <button type="button" onclick="return document.form.text.value +='*'">×</button>
+        <button type="button" onclick="return document.form.text.value +='7'">7</button>
+        <button type="button" onclick="return document.form.text.value +='8'">8</button>
+        <button type="button" onclick="return document.form.text.value +='9'">9</button>
+        <button type="button" onclick="return document.form.text.value +='-'">-</button>
+        <button type="button" onclick="return document.form.text.value +='4'">4</button>
+        <button type="button" onclick="return document.form.text.value +='5'">5</button>
+        <button type="button" onclick="return document.form.text.value +='6'">6</button>
+        <button type="button" onclick="return document.form.text.value +='+'">+</button>
+        <button type="button" onclick="return document.form.text.value +='3'">3</button>
+        <button type="button" onclick="return document.form.text.value +='2'">2</button>
+        <button type="button" onclick="return document.form.text.value +='1'">1</button>
+        <button type="button" onclick="return document.form.text.value +='0'">0</button>
+        <button type="button" onclick="return document.form.text.value +='00'">00</button>
+        <button type="button" onclick="return document.form.text.value +='.'">.</button>
+        <button class="equal" type="button" onclick="return document.form.text.value= eval(form.text.value)">=</button>
+    </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
